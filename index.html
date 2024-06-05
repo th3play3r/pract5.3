@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Математичні функції й константи</title>
+ <meta charset="utf-8">
+</head>
+<body>
+ <div id="output"></div>
+
+ <script>
+  // Константи
+  const e = Math.E;
+  const pi = Math.PI;
+  const ln10 = Math.LN10;
+  const ln2 = Math.LN2;
+  const log2e = Math.LOG2E;
+  const log10e = Math.LOG10E;
+  const sqrt2 = Math.SQRT2;
+  const sqrt1_2 = Math.SQRT1_2;
+
+  // Функції
+  const round = Math.round(1.54);
+  const max = Math.max(4, 2);
+  const min = Math.min(4, 2);
+  const pow = Math.pow(4, 2);
+  const sqrt = Math.sqrt(4);
+
+  // Генератор випадкових чисел
+  const random = Math.random();
+
+  // Виведення результатів
+  const outputElement = document.getElementById("output");
+  outputElement.innerHTML = `<h2>КОНСТАНТИ</h2>
+   <p>1. Значення константи е = ${e}</p>
+   <p>2. Значення константи π = ${pi}</p>
+   <p>3. Десятковий логарифм постійної Ейлера (е) = ${ln10}</p>
+   <p>4. Двійковий логарифм постійної Ейлера (е) = ${ln2}</p>
+   <p>5. Натуральний логарифм числа 10 = ${log10e}</p>
+   <p>6. Натуральний логарифм числа 2 = ${log2e}</p>
+   <p>7. Корінь квадратний із двох = ${sqrt2}</p>
+   <p>8. Корінь квадратний з однієї другої = ${sqrt1_2}</p>
+   <h2>ФУНКЦІЇ</h2>
+   <p> Результат обчислення арксинуса одиниці: y = 1.5707963267948966 </p>
+            <p> Тангенс 45 градусів (π /4 радіан): y = 0.9999999999999999 </p>
+            <p> Результат обчислення арктангенса одиниці: y = 0.7853981633974483</p>
+            <p> Результат зведення e в степінь 2: y = 7.38905609893065</p>
+            <p> Натуральний логарифм від e²: y = 2</p>
+<h2>ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ</h2>
+<p>Формування випадкових чисел в інтервалі [0;1]: y = ${random}</p>`;
+</script>
+
+</body>
+</html>
